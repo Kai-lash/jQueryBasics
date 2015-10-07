@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script>
+	$(document).ready(function() {
+  var oldSize = parseFloat($("#content").css('font-size'));
+  var newSize = oldSize  * 2;
+  $("#content").hover(
+    function() {
+     $("#content").animate({ fontSize: newSize}, 200);
+    },
+    function() {
+    $("#content").animate({ fontSize: oldSize}, 200);
+   }
+ );
+});
+
+
+</script>
+</head>
+<body>
+<div id="content">Bring the mouse pointer here and see the effect</div>
+</body>
+</html>

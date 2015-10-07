@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p { background:#DAA520; font-weight:bold;}
+</style>
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+</head>
+<body>
+<button id="butt1">Click to hide Paragraph</button>
+<button id="butt2">Click to show Paragraph</button>
+<p>This will Hide after clicking button</p>
+<p>It will hide too....................</p>
+<script>
+$("#butt2").hide();
+$("#butt1").click(function () {
+$("p").hide("slow");
+$("#butt1").hide("slow");
+$("#butt2").show("slow");
+}); 
+$("#butt2").click(function () {
+$("p").show("slow");
+});
+</script>
+</body>
+</html>

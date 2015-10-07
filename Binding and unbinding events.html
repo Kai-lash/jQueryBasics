@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p { background:#DAA520; font-weight:bold; cursor:pointer; 
+padding:5px;width:20%;}
+p.over { background: #ADFF2F; }
+span { color:red; }
+</style>
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+</head>
+<body>
+	<p>Click or double click here.</p>
+<span></span>
+<script>
+$("p").bind("click", function(event){
+var str = "( " + event.pageX + ", " + event.pageY + " )";
+$("span").text("Click happened! " + str);
+});
+$("p").bind("dblclick", function(){
+$("span").text("Double-click happened in " + this.nodeName);
+});
+$("p").bind("mouseentermouseleave", function(event){
+$(this).toggleClass("over");
+});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script>
+	$(document).ready(function(){
+	$('#imgSmile').width(200);
+	$('#imgSmile').mouseover(function()
+	{
+	   $(this).css("cursor","pointer");
+	   $(this).animate({width: "500px"}, 'slow');
+	});
+	$('#imgSmile').mouseout(function()
+	{
+	   $(this).animate({width: "200px"}, 'slow');
+	});
+});
+
+
+</script>
+</head>
+<body><img id="imgSmile" src="images/Desert.jpg" width="25%">
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script>
+		$(document).ready(function(){
+	    $('#txtValue').keypress(function(event){
+	        var txt = $('#spn').text();
+	      $('#spn').text(txt + String.fromCharCode(event.keyCode));
+	   });
+	});
+
+
+
+</script>
+</head>
+<body>Type here
+<input type='text' id='txtValue' /><br><br>
+<span id="spn">You have typed: </span>
+
+</body>
+</html>

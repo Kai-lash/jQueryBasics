@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+		<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script>
+				$(document).ready(function(){
+	  $('#txtInput').live("cut copy paste",function(e) {
+	      e.preventDefault();
+	  });
+	});
+
+
+</script>
+</head>
+<body>Type something in the textbox and try to cut ,copy or paste it
+<input type="text" id="txtInput">
+</body>
+</html>
