@@ -1,41 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
-		<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
-		<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
-<script>
-			$(document).ready(function(){
-	$("#txtNumbers").keydown(function(event) {
-	   if(event.shiftKey)
-	        event.preventDefault();
-	   if (event.keyCode == 46 || event.keyCode == 8) {
-	   }
-	   else {
-	        if (event.keyCode < 95) {
-	           
-	          if (event.keyCode < 48 || event.keyCode > 57) {
-	              if (event.keyCode >= 37 && event.keyCode <= 40) { 
-	               }
-	              else
-	              {
-	                event.preventDefault();
-	              }
-	          }
-	        }
-	        else {
-	              if (event.keyCode < 96 || event.keyCode > 105) {
-	                  event.preventDefault();
-	              }
-	        }
-	      }
-	   });
-	});
+	<link type="text/css" href="css/ui-lightness/jquery-ui-1.8.23.custom.css" rel="stylesheet" />
+	<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+	<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#txtNumbers").keydown(function(event) {
+				if(event.shiftKey)
+					event.preventDefault();
+				if (event.keyCode == 46 || event.keyCode == 8) {
+				}
+				else {
+					if (event.keyCode < 95) {
+						
+						if (event.keyCode < 48 || event.keyCode > 57) {
+							if (event.keyCode >= 37 && event.keyCode <= 40) { 
+							}
+							else
+							{
+								event.preventDefault();
+							}
+						}
+					}
+					else {
+						if (event.keyCode < 96 || event.keyCode > 105) {
+							event.preventDefault();
+						}
+					}
+				}
+			});
+		});
 
-</script>
+	</script>
 </head>
 <body>Type here
-<input type='text' id='txtNumbers' /><br><br>
+	<input type='text' id='txtNumbers' /><br><br>
 
 
 </body>
